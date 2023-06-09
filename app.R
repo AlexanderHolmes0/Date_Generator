@@ -6,6 +6,7 @@ library(shinythemes)
 ideas <- read.csv("Ideas.csv")
 ideas <- ideas[-1, ]
 
+
 # Define UI for application that draws a histogram
 ui <- fluidPage(
   theme = shinytheme("superhero"),
@@ -41,7 +42,7 @@ ui <- fluidPage(
   # Application title
   fluidRow(
     column(
-      width = 4, align = "center", offset = 4,
+      width = 12, align = "center",
       br(),
       br(),
       titlePanel("Date Night Generator"),
@@ -52,7 +53,7 @@ ui <- fluidPage(
       actionBttn(
         inputId = "generate",
         label = "Get Idea",
-        icon = icon(name = "calendar"),
+        icon = icon(name = "lightbulb"),
         style = "unite",
         color = "royal"
       ),
