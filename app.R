@@ -46,7 +46,7 @@ ui <- fluidPage(
       br(),
       titlePanel("Date Night Generator"),
       br(),
-      img(src = "datenight.gif"),
+      div(img(src = "datenight.gif"),style = "text-align: center;"),
       br(),
       br(),
       actionBttn(
